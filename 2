@@ -1,0 +1,22 @@
+a = []
+b = []
+c = []
+for i in range(2):
+    linha1 = []
+    for j in range(2):
+        linha1.append(int(input("Insira o elemento ["+str(i)+","+str(j)+"] da matriz A: ")))
+    a.append(linha1)
+
+for i in range(2):
+    linha2 = []
+    for j in range(2):
+        linha2.append(int(input("Insira o elemento ["+str(i)+","+str(j)+"] da matriz B: ")))
+    b.append(linha2)
+
+for i in range(2):
+    for j in range(2):
+        c.append((a[i][j]) + (b[i][j]))
+
+print(a)
+print(b)
+print("a+b = ",c)
