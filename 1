@@ -1,0 +1,19 @@
+lista = []
+matp = []
+matpk = []
+for i in range(3):
+    linha = []
+    for j in range(3):
+        linha.append(int(input("Insira o o elemento na matriz [" + str(i) + "," + str(j) + "]")))
+    lista.append(linha)
+
+for i in range(3):
+    for j in range(5):
+        if i==j:
+            matp.append(lista[i][j])
+
+k = (int(input("Qual o valor você deseja multiplicar a lista?")))
+for i in range(3):
+    matpk.append(matp[i]*k)
+print (matp)
+print (matpk)
