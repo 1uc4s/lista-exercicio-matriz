@@ -1,0 +1,35 @@
+a = []
+b = []
+c = []
+
+
+n = int(input("Insira a primeira dimensão da matriz A: "))
+m = int(input("Insira a segunda dimensão da matriz A: "))
+
+for i in range(n):
+    linha = []
+    for j in range(m):
+        linha.append(int(input("Insira o elemento ["+str(i)+","+str(j)+"] da matriz A: ")))
+    a.append(linha)
+
+x = int(input("Insira a primeira dimensão da matriz B: "))
+y = int(input("Insira a segunda dimensão da matriz B: "))
+
+for i in range(x):
+    linha = []
+    for j in range(y):
+        linha.append(int(input("Insira o elemento ["+str(i)+","+str(j)+"] da matriz A: ")))
+    b.append(linha)
+
+if n==x and m==y:
+    for i in range(n):
+        linha = []
+        for j in range(m):
+            linha.append((a[i][j]) * (b[i][j]))
+        c.append(linha)
+else:
+    print("O tamanho das matrizes é diferente")
+
+print ("A matriz A é: ",a)
+print ("A matriz B é: ",b)
+print ("A multiplicação das matrizes é: ",c)
