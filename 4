@@ -1,0 +1,19 @@
+a = []
+soma = 0
+maiorsoma = 0
+linhamaiorsoma = []
+for i in range(3):
+    linha = []
+    for j in range(3):
+        linha.append(int(input("Insira o elemento na matriz: ")))
+    a.append(linha)
+
+for i in range(3):
+    soma = a[i][0] + a[i][1] + a[i][2]
+    if maiorsoma < soma:
+        maiorsoma = soma
+        linhamaiorsoma = a[i][0], a[i][1], a[i][2]
+
+print("A matriz é: ", a)
+print("A linha de maior soma é: ", linhamaiorsoma)
+print("A soma da linha de maior soma é: ",maiorsoma)
